@@ -1,0 +1,245 @@
+{% extends 'headerfooter.html' %}
+{% block content %}
+	<nav id="breadcrumbs" class="breadcrumbs">
+		<div class="container page-wrapper">
+			<a href="#">Home</a> » <span class="breadcrumb_last" aria-current="page">Services</span>
+		</div>
+	</nav>
+
+	<section class="w3l-content-with-photo-4">
+		<div class="content-photo-info py-5">
+			<h6 class="sub-title" style="margin-left:50px; "><b> Services for you</b></h6>
+			{% for x in details %}
+			<div class="container py-lg-5">
+				
+				<div class="content-photo-grids row mt-0">
+					
+					<div class="photo-6-inf-left col-lg-6 pr-lg-4">
+						<a href="#"><img src="{{x.image.url}}" width="320" height="213" class="img-fluid" alt=""></a>
+					</div>
+					<div class="photo-6-inf-right col-lg-6 text-left pl-lg-5 mt-lg-0 mt-4">
+				<h4>{{x.servicename}}</h4>
+						<p>{{x.desc}}</p>
+						<div class="read">
+								<a class="btn mt-4" href="/get/?sid={{x.id}}">Get Price</a>
+							</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		{% endfor %}
+	</section>
+					
+	<!-- /specification-6-->
+	<section class="w3l-satisfied-main">
+		<div class="satisfy-content py-5">
+			<div class="container py-lg-5">
+				<h6 class="sub-title">Satisfied Clients</h6>
+				<h3 class="hny-title two"> We Providing A High Quality Services</h3>
+				<p class="counter-sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui
+					officia sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+				<!--start-divice-scree-slider-->
+				<div class="skill_info mt-lg-5 mt-4">
+					<div class="stats_left">
+						<div class="counter_grid">
+							<div class="icon_info">
+								<p class="counter">165</p>
+								<h3>Cleaning Staff</h3>
+								<p class="counter-para">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+							</div>
+						</div>
+					</div>
+					<div class="stats_left">
+						<div class="counter_grid">
+							<div class="icon_info">
+								<p class="counter">563</p>
+								<h3>Successful Projects</h3>
+								<p class="counter-para">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+							</div>
+						</div>
+					</div>
+					<div class="stats_left">
+						<div class="counter_grid">
+							<div class="icon_info">
+								<p class="counter">645</p>
+								<h3>Happy Customer</h3>
+								<p class="counter-para">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+							</div>
+						</div>
+					</div>
+					<div class="stats_left">
+						<div class="counter_grid">
+							<div class="icon_info">
+								<p class="counter">465</p>
+								<h3>Carpets Cleaned</h3>
+								<p class="counter-para">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+	</section>
+	<!-- //specification-6-->
+	<!--pricing-16-->
+	<section class="w3l-pricing-16-main">
+		<div class="pricing-content py-5">
+			<div class="container py-lg-5">
+				<div class="title-content text-center mb-lg-5 mt-4">
+					<h6 class="sub-title">Available packages</h6>
+					<h3 class="hny-title">Pricing Plans</h3>
+					<p class="title-para">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui
+						officia sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+				</div>
+
+				<div class="row w3l-pricing-7-gd-top pt-4">
+					<div class="col-lg-4 col-md-6 price-main-hny-16 mt-lg-0 mt-5">
+						<div class="w3l-pricing-7-gd-left">
+							<div class="w3l-pricing-7  pric-7-1">
+								<div class="w3l-pricing-7-top">
+									<h6>Basic</h6>
+									<h3 class="title-sub"><label>$</label>100<span>Monthly</span></h3>
+								</div>
+								<div class="w3l-pricing-7-bottom">
+									<div class="w3l-pricing-7-bottom-bottom">
+										<ul class="links">
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info disable">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-times" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info disable">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-times" aria-hidden="true"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="buy-button text-center">
+										<div class="read">
+											<a href="/contact/" class="btn mt-4">Get Started</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 price-main-hny-16 mt-lg-0 mt-5">
+						<div class="w3l-pricing-7-gd-left active">
+							<div class="w3l-pricing-7  pric-7-1">
+								<div class="w3l-pricing-7-top">
+									<h6>Standard</h6>
+									<h3 class="title-sub"><label>$</label>200<span>Monthly</span></h3>
+								</div>
+								<div class="w3l-pricing-7-bottom">
+									<div class="w3l-pricing-7-bottom-bottom">
+										<ul class="links">
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info disable">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-times" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info disable">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-times" aria-hidden="true"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="buy-button text-center">
+										<div class="read">
+											<a href="/contact/" class="btn mt-4">Get Started</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 price-main-hny-16 mt-lg-0 mt-5">
+						<div class="w3l-pricing-7-gd-left">
+							<div class="w3l-pricing-7 pric-7-1">
+								<div class="w3l-pricing-7-top">
+									<h6>Exclusive</h6>
+									<h3 class="title-sub"><label>$</label>395<span>Monthly</span></h3>
+								</div>
+								<div class="w3l-pricing-7-bottom">
+									<div class="w3l-pricing-7-bottom-bottom">
+										<ul class="links">
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+											<li class="tick-info">
+												<span class="pricing-val">Lorem ipsum
+													dolor</span>
+												<span class="fa fa-check" aria-hidden="true"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="buy-button text-center">
+										<div class="read">
+											<a href="/contact/" class="btn mt-4">Get Started</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- //pricing-16 -->
+	<!-- footer-66 -->
+	{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'admin/headerfooter.html' %}
+{% block content %}
+					<!-- //header-ends -->
+						<!--outter-wp-->
+							<div class="outter-wp">
+									<!--sub-heard-part-->
+									  <div class="sub-heard-part">
+									   <ol class="breadcrumb m-b-0">
+											<li><a href="/admin_index/">Home</a></li>
+											<li class="active">Tables</li>
+										</ol>
+									   </div>
+								  <!--//sub-heard-part-->
+									<div class="graph-visual tables-main">
+											<h2 class="inner-tittle">Members Details</h2>
+												<div class="graph">
+														<div class="tables">
+																
+																<table class="table table-bordered">
+																	<thead>
+																		<tr>
+																		  <th>#</th>
+																		  <th>Image</th>
+																		  <th>Name</th>
+																		  <th>Description</th>
+																		  <th>Contact</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																	{% for x in details %}
+																	<tr>
+																		  <th scope="row">{{forloop.counter}}</th>
+																		  <td><img src="{{x.image.url}}" width="200" height="200"></td>
+																		  <td>{{x.name}}</td>
+																		  <td>{{x.desc}}</td>
+																		  <td>{{x.contact}}</td>
+																		  <td><a href="/admin_tupdate/?uid={{x.id}}"><i class="fa fa-edit"></i></a></td>
+                                                                          <td><a href="/admin_tdelete/?uidd={{x.id}}"><i class="fa fa-trash-o"></i></a></td>
+																		</tr>
+																	{% endfor %}	
+																	</tbody>
+																</table>
+															</div>
+												
+										        </div>
+												
+												
+													</div>
+												
+										</div>
+										<!--//graph-visual-->
+									{% endblock %}
+									<!--//outer-wp-->
+									 <!--footer section start-->
+										

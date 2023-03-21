@@ -9,14 +9,16 @@ Author URL: http://w3layouts.com
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Cleanfreshly a Home Maintenance & Service Category Bootstrap Responsive Web Template | Home :: W3layouts
-	</title>
+	<link rel="icon" type="" href="/static/assets/images/proimg.jpg">
+	<title>Crystal Shine Cleaning Services</title>
 	<!-- Template CSS -->
 	<link rel="stylesheet" href="/static/assets/css/style-starter.css">
 	<!-- Template CSS -->
 	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,400i,500,600,700&display=swap"
 		rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
+<script src="/static/assets/js/jquery-3.3.1.min.js"></script>
+
 	<!-- Template CSS -->
 </head>
 
@@ -57,14 +59,9 @@ Author URL: http://w3layouts.com
 	</section>
 	<!--//top-header-content-->
 	<header class="w3l-header-nav">
-		<!--/nav-->
 		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 			<div class="container">
-				<h1><a class="navbar-brand" href="/">Clean<span>Freshly</span></a></h1>
-				<!-- if logo is image enable this   
-						<a class="navbar-brand" href="#/">
-							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-						</a> -->
+				<h1><a class="navbar-brand" href="/"><img src="/static/assets/images/proimg.jpg" style="width: 90px;height: 80px;"><span>Crystal Shine Cleaning</span></a></h1>
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
@@ -75,24 +72,26 @@ Author URL: http://w3layouts.com
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
+						<li class="nav-item " id="home">
 							<a class="nav-link" href="/">Home</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="about">
 							<a class="nav-link" href="/about/">About</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="services">
 							<a class="nav-link" href="/services/">Services</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item" id="gallery">
+							<a class="nav-link" href="/gallery/">Gallery</a>
+						</li>
+
+						<li class="nav-item" id="contact">
 							<a class="nav-link" href="/contact/">Contact</a>
 						</li>
 					</ul>
-					<a href="#" class="ml-lg-3 mt-lg-0 mt-3 book btn btn-secondary btn-style">Get started</a>
 				</div>
 			</div>
 		</nav>
-		<!--//nav-->
 	</header>
 
      {% block content %}
@@ -103,11 +102,7 @@ Author URL: http://w3layouts.com
 			<div class="container">
 				<div class="row footer-hny-top">
 					<div class="col-lg-6 footer-logo pl-lg-0">
-						<h2><a class="navbar-brand" href="/">Clean<span>Freshly</span></a></h2>
-						<!-- if logo is image enable this   
-						<a class="navbar-brand" href="#/">
-							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-						</a> -->
+						<h2><a class="navbar-brand" href="/"><span>Crystal Shine Cleaning</span></a></h2>
 					</div>
 					<div class="col-lg-6 main-social-footer-28 pr-lg-0">
 						<a href="#facebook"><span class="fa fa-facebook"></a>
@@ -123,8 +118,6 @@ Author URL: http://w3layouts.com
 						<ul>
 							<li><a href="/about/">About Company</a></li>
 							<li><a href="/services/">Our Services</a></li>
-							<!-- <li><a href="portfolio.html">Recent projects list</a></li>
-							<li><a href="blog.html">Latest News blog</a></li> -->
 						</ul>
 					</div>
 					<div class="col-lg-5 col-md-6 footer-list-28">
@@ -161,10 +154,9 @@ Author URL: http://w3layouts.com
 					</div>
 				</div>
 			</div>
-			<div class="midd-footer-28 align-center">
-				<p class="copy-footer-28">© 2020 Cleanfreshly. All rights reserved | Designed by <a
-						href="https://w3layouts.com">W3layouts</a></p>
-			</div>
+			<div>
+			<p style="text-align: center;">&copy; {% now "y" %}</p>
+		</div>
 		</div>
 		<!-- move top -->
 		<button onclick="topFunction()" id="movetop" title="Go to top">
@@ -191,14 +183,12 @@ Author URL: http://w3layouts.com
 			}
 		</script>
 		<!-- /move top -->
-
 	</footer>
 	<!--//footer-66 -->
 </body>
 
 </html>
 
-<script src="/static/assets/js/jquery-3.3.1.min.js"></script>
 <!-- disable body scroll which navbar is in active -->
 
 <!--//-->

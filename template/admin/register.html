@@ -1,7 +1,8 @@
-   <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>Augment an Admin Panel Category Flat Bootstrap Responsive Web Template | Login :: w3layouts</title>
+<link rel="icon" type="" href="/static/assets/images/proimg.jpg">
+<title>Crystal Shine Cleaning Admin</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -24,27 +25,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 <body>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-										  <script type="text/javascript">
-										  	$('#password, #confirm_password').on('keyup', function () {
-										  		if ($('#password').val() == $('#confirm_password').val()) {$('#confirm_password').css('border-color', 'green');} 
-										  		else $('#confirm_password').css('border-color', 'red');
-});
-										  </script>
+	 
 								<!--/login-->
 								
 									   <div class="error_page">
 												<!--/login-top-->
 												
 													<div class="error-top">
-													<h2 class="inner-tittle page">Augment</h2>
 													    <div class="login">
 														<h3 class="inner-tittle t-inner">Register</h3>
 														<h4 style="color:red;text-align:center;">{{error}}</h4>
 																<form action="/admin_register/"method="post">
 			                                                     {% csrf_token %}
-																		<input type="text" name="email" class="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
-																		<input type="password" name="password" id="password">
+																		<input type="text" name="email" class="text" pattern="[^ @]*@[^ @]*" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';}" >
+																		<input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="password" id="password">
 																		<input type="password" name="confirmpassword" id="confirm_password">
 																		<div class="sign-up">
 																					<input type="reset" value="Reset">
@@ -64,11 +58,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</div>
 													 </div>
 													</body>
+													<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+										  <script type="text/javascript">
+										  	$('#password, #confirm_password').on('keyup', function () {
+										  		if ($('#password').val() == $('#confirm_password').val()) {$('#confirm_password').css('border-color', 'green');} 
+										  		else $('#confirm_password').css('border-color', 'red');
+});
+										  </script>
+
 													<div class="footer">
-												<div class="error-btn">
-															<a class="read fourth" href="index.html">Return to Home</a>
-															</div>
-										   <p>&copy 2016 Augment . All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">W3layouts.</a></p>
 										</div>
 									<!--footer section end-->
 									<!--/404-->

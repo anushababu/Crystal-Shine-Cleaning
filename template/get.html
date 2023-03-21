@@ -1,0 +1,47 @@
+
+	<!-- //w3l-header -->
+	<!-- /contact-form -->
+	{% extends 'headerfooter.html' %}
+    {% block content %}
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+   {% if success %}
+  swal("{{success}}", "","success");
+  {% elif error %}
+  swal("{{error}}","", "error");
+  {% endif %}
+  </script>
+	
+	<section class="w3l-contact-main">
+		<div class="contact-infhny py-5">
+			<div class="container py-lg-5">
+				<div class="grid contact-grids row">
+			
+					<div class="col-lg-6 contacts12-main">
+						<form action="/get/?sid={{details}}" method="post">
+							  {% csrf_token %} 
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Full name" class="contact-input" />
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" placeholder="Your email" class="contact-input" />
+							</div>
+							<div class="form-group">
+								<input type="tel" name="phone" maxlength="10" placeholder="Phone number" class="contact-input" />
+							</div>
+							<div class="form-group">	
+								<input type="text" name="address" placeholder="address" class="contact-input" />
+							</div>	
+							
+							<div class="text-right">
+								<button class="btn submit" value="save">Submit</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+	</section>
+	<!-- //contact-form -->
+ 	{% endblock %}
+	<!-- footer-66 -->
